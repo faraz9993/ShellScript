@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "select 1 to Show disk usage: 
+	select 2 show system uptime:
+	select 3 You are logged into the system: "
+read input
+
+SYSINFO=$(df)
+UP=$(uptime)
+HOST=$(hostname)
+if [ "$input" -eq 1 ]
+then
+	echo "$SYSINFO"
+elif [ "$input" -eq 2 ]
+then 
+	echo "$UP"
+elif [ "$input" -eq 3 ]
+then
+	echo "$HOST"
+else
+	echo "choose between these three numbers only"
+fi

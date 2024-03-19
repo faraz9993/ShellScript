@@ -1,0 +1,12 @@
+#!/bin/bash
+
+first=1
+echo "Enter the number of lines to display: "
+read LINE_NUM
+
+while [ $first -le $LINE_NUM ]
+do
+	echo "${first}: ${LINE}"
+	((first++))
+done < /etc/passwd
+#Reference from exercise number3
