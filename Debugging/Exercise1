@@ -1,0 +1,15 @@
+#!/bin/bash -ex
+
+ls ~
+
+ls ~/Docume
+
+ls ~/Documents
+
+
+
+
+
+#took reference from QUIZ 8 questions
+
+
