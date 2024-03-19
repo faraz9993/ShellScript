@@ -1,0 +1,18 @@
+#!/bin/bash
+
+cat /etc/shadow
+
+if [ "$?" -eq 0 ]
+then 
+	echo "Shadow passwords are enabled."
+else
+	echo "I don't have access to /etc/shadow"
+
+fi
+
+vim /etc/shadow
+
+if [ "$?" -eq 0 ]
+then
+	echo "You do NOT have permissions to edit /etc/shadow."
+fi

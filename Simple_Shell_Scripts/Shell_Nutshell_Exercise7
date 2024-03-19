@@ -1,0 +1,12 @@
+#!/bin/bash
+FILE=$1
+if [ -f "$FILE" ]
+then
+        echo " Its file"
+elif [ -d "$FILE" ]
+then
+        echo "Its directory"
+else
+        echo "Other type"
+fi
+

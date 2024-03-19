@@ -1,0 +1,6 @@
+#!/bin/bash
+L="man bear pig dog cat sheep"
+for i in $L
+  do
+    echo $L
+  done

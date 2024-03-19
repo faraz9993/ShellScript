@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "file or dircetory: "
+read FILE
+if [ -f "$FILE" ]
+then
+	echo " Its file"
+elif [ -d "$FILE" ]
+then
+	echo "Its directory"
+else
+	echo "Other type"
+fi
