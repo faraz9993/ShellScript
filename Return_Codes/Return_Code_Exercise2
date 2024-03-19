@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "write file name: "
+read FILE
+
+if [ -f "$FILE" ]
+then
+	echo "THis is a file"
+	echo "$?"
+elif [ -d "$FILE" ]
+then
+	echo "This is a directory"
+	echo "$?"
+else
+	echo "Other type"
+	echo "$?"
+fi

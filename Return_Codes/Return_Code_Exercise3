@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cat /etc/shadow
+
+if [ "$?" -eq 0 ]
+then
+	echo "Command Succeeded"
+	echo "$?"
+else
+	echo "Command Failed"
+	echo "$?"
+fi
