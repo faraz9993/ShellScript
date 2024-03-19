@@ -1,0 +1,16 @@
+#!/bin/bash
+
+file_count() {
+    local numberoffiles=$(ls -1 | wc -l)
+    
+    echo "Number of files in PWD: $numberoffiles"
+}
+file_count
+#The function file_count is defined, and within this function:
+#local count=$(ls -1 | wc -l):
+#ls -1 lists all files and directories in the current directory, each on a separate line.
+#wc -l counts the number of lines, which corresponds to the number of files in the directory.
+#$() is used for command substitution to capture the output of the ls -1 | wc -l command.
+#local count declares the variable count as a local variable within the function.
+#echo "Number of files in the present working directory: $count": Outputs the count of files.
+#Outside the function, file_count is called to execute it.
