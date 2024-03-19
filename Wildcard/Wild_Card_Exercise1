@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for all in *.jpg
+do 
+	mv $all $(date "+%Y-%m-%d")-$all
+done
